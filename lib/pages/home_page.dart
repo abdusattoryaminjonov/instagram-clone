@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+  static const String id = "home_page";
+
   const HomePage({super.key});
 
   @override
@@ -10,8 +12,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("@abdusattor_true"),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "Instagram",
+          style: TextStyle(
+              color: Colors.white, fontSize: 30, fontFamily: "Billabong"),
+        ),
+      ),
+      body: Center(
+        child: Text("Welcome yto Instagram"),
+      ),
     );
   }
 }
